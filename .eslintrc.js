@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     'react',
-    'prettier'
+    'prettier',
   ],
   rules: {
     'prettier/prettier': 'error',
@@ -30,6 +30,10 @@ module.exports = {
       'warn',
       { extensions: ['.jsx', '.js']}
     ],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    "react/state-in-constructor": 'off',
+    "react/destructuring-assignment": 'off',
+    "react/no-access-state-in-setstate": "off",
+    "react/no-unused-state": "off"
   },
 };
