@@ -35,15 +35,15 @@ export default createGlobalStyle`
   }
 
   button {
-  background-color: #e4730f;
-  border: none;
-  margin:5px;
-  color: white;
-  border-radius: 5px;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-}
+    background-color: #e4730f;
+    border: none;
+    margin:5px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
 
   a {
     text-decoration: none;

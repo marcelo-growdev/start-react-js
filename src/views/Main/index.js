@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
-import { Card, Title, ItemName } from './styles';
+import {
+  Card,
+  Title,
+  ItemName,
+  RemoveButton,
+  SendButton,
+  CustomInput,
+} from './styles';
 
 class Main extends Component {
   state = {
@@ -51,18 +58,23 @@ class Main extends Component {
               {this.state.growdevers.map(item => (
                 <li>
                   <ItemName>{item}</ItemName>
-                  <button onClick={() => this.handleDelete(item)} type="button">
+                  <RemoveButton
+                    onClick={() => this.handleDelete(item)}
+                    type="button"
+                  >
                     Remover
-                  </button>
+                  </RemoveButton>
                 </li>
               ))}
             </ul>
-            <input
+            <CustomInput
+              label="Digite o nome"
+              variant="outlined"
               type="text"
               onChange={this.handleInputChange}
               value={this.state.newGrowdev}
             />
-            <button type="submit">Enviar</button>
+            <SendButton type="submit">Enviar</SendButton>
           </form>
         </Card>
       </>
